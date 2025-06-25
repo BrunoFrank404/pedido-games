@@ -27,17 +27,17 @@
           <input type="text" id="valor" class="form-control" />
         </div>
         <div class="mb-3">
-          <button type="button" class="btn btn-primary">Adicionar</button>
+          <button type="button" class="btn btn-primary" onclick="adicionar()">Adicionar</button>
         </div>
       </fieldset>
     </form>
     <div class="mt-5">
 
 
-      <table class="table table-striped">
+      <table class="table table-striped" id="lista-produto">
         <thead>
           <tr>
-            <th scope="col">Código</th>
+            <th scope="col">Codigo</th>
             <th scope="col">Produto</th>
             <th scope="col">Quantidade</th>
             <th scope="col">Valor</th>
@@ -46,9 +46,20 @@
         <tbody>
 
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td id="total_quantidade"></td>
+            <td id="total_valor"></td>
+          </tr>
+        </tfoot>
+
       </table>
     </div>
   </div>
+
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="pedido.js"></script>
 </body>
 
 </html>
